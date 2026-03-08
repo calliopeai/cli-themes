@@ -1,0 +1,42 @@
+{
+  "name": "@calliopelabs/cli-themes",
+  "version": "1.0.0",
+  "description": "Theme packs for Calliope CLI — 104 curated skins, palettes, and companions",
+  "keywords": [
+    "calliope",
+    "themes",
+    "terminal",
+    "skins",
+    "cli"
+  ],
+  "author": "Calliope Labs Inc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calliopeai/cli-themes.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
